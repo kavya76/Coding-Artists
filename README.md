@@ -1,2 +1,16 @@
 # Coding-Artists
-PREDICTING THE ONCOMING OF EARTHQUAKE !! 
+PREDICTING THE ONCOMING OF EARTHQUAKES !
+Earthquakes are one of the plenty hazardous natural disasters caused due to the sudden breaking of the rock underground along with the fault. This phenomenon causes the release of enormous amount of seismic waves that results in the shaking of the ground.
+	In this project for codefundo++, we propose a technique to predict earthquakes using various machine learning techniques with each technique complementing the other through the knowledge acquired during learning. Thus every step in this model is adding further improvements therefore resulting in a final improved version of prediction model. The dataset obtained is divided into training and testing models.
+The layout of the overall prediction is as follows:
+The proposed methodology includes the use of two step feature selection process. The features are selected after performing relevancy  and redundancy checks, to make sure that only useful features are employed for earthquake prediction. The selected set of features are then passed to Support Vector Regression (SVR) and Hybrid Neural Networks (HNN) . In the usual case, these parameters are determined by the user .
+Error Modelling : By studying the minimum error, the process of predicting continues at any repetition. Thus each time it repeats, the support vector machine is modelled to calculate the predicted values with actual values, leading to the estimation of the error. 
+
+Division into clusters and developing a prediction model :
+		The dataset is divided into clusters based on magnitude of the earthquakes, depth, longitude ,latitude and the occurrence dates. The Prediction model is developed for earthquakes in each cluster independently. Each cluster forms a new dataset. Thus, the number of sub-datasets is equal to the number of clusters.  One of the variables required for predicting the magnitude of earthquakes is the number of days passed since the last earthquake. Prediction model is developed for each sub-dataset to predict the magnitude based on other predictors. The prediction model for the sub-dataset is evaluated using 10-fold cross validation and root mean square error (RMSE) is calculated to evaluate the accuracy of the prediction model.
+
+Performance:
+SVR-HNN based model is separately trained for all regions, using 70% of all the datasets. Prediction results are evaluated for all the regions. The performance of SVR and HNN  are dependent on respective parameter selection and the data set. The correlation between the support vector regression parameters and the data can affect the model, so parameter estimation is an important and necessary process for achieving a strong correlation So, the collective performance obtained in SVR-HNN model is governed through selection of appropriate parameter values. The extensive experimentation is performed to empirically select the values for parameters, which obtain good results for each of the used algorithms (SVR and HNN).Accuracy is used for performance evaluation in many aspects.
+
+Hence, by studying and reviewing the history of the earthquake and using machine learning concepts ,  we might be able to predict  the oncoming earthquakes... 
+
