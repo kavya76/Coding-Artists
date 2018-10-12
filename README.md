@@ -1,2 +1,2 @@
 # Coding-Artists
-My first Repository 
+PREDICTING THE ONCOMING OF EARTHQUAKE ! 
